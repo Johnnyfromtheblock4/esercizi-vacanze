@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #f7d548;
+  --blue: #3b99fc;
+  --orange: #ff7f50;
+  --green: #2ecc71;
+  --white: #fff;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f7d548, #3b99fc);
+  color: var(--blue);
+  text-align: center;
+  padding: 2rem;
+}
+
+.app-wrapper {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  box-shadow: 0 8px 20px rgba(59, 153, 252, 0.4);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: var(--orange);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+}
+
+ul#desideri {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul#desideri li {
+  background-color: var(--yellow);
+  margin: 0.5rem 0;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  color: var(--blue);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(247, 213, 72, 0.4);
+}
+
+button.delete-btn {
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.delete-btn:hover {
+  background-color: #e06a3f;
+}

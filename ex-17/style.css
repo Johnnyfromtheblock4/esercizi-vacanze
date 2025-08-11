@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --sun-yellow: #f7d548;
+  --sea-blue: #3b99fc;
+  --coral-orange: #ff7f50;
+  --palm-green: #2ecc71;
+  --white-sand: #fff9f0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--sea-blue);
+  color: var(--sea-blue);
+  text-align: center;
+  padding: 2rem;
+}
+
+.app-wrapper {
+  background-color: var(--white-sand);
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  box-shadow: 0 8px 20px rgba(59, 153, 252, 0.4);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: var(--coral-orange);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid var(--sea-blue);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+button#aggiungiAugurio {
+  background-color: var(--coral-orange);
+  color: var(--white-sand);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+button#aggiungiAugurio:hover {
+  background-color: #e06a3f;
+}
+
+ul#listaAuguri {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: var(--sea-blue);
+  font-weight: 600;
+}
+
+ul#listaAuguri li {
+  background-color: var(--sun-yellow);
+  margin: 0.4rem 0;
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(247, 213, 72, 0.4);
+}
